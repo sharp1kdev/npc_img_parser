@@ -5,8 +5,8 @@ const url = 'http://www4.shemsfm.net';
 
 const npcList = fs.readFileSync('mobs.txt', 'utf-8').split('\r\n');
 
-const download = async function(uri, filename, callback){
-    req.head(uri, function(err, res, body){
+const download = async (uri, filename, callback) => {
+    req.head(uri, () => {
         req(uri).pipe(fs.createWriteStream('img/' + filename + '.png')).on('close', callback);
     });
 };
