@@ -1,0 +1,16 @@
+{
+  "name": "npc_img_parser",
+  "version": "1.0.0",
+  "description": "Image parser",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "puppeteer": "^1.16.0",
+    "request": "^2.88.0"
+  },
+  "keywords": [],
+  "author": "theGrand",
+  "license": "ISC"
+}
